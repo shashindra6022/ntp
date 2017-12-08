@@ -11,6 +11,6 @@ class ntp::config(
     owner   => $config_owner,
     group   => $config_group,
     mode    => $config_mode,
-    content => template("${module_name}/ntp.conf.erb")
+    content => template("${module_name}/ntp.conf.erb"),
   }
 }
