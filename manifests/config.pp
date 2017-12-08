@@ -1,11 +1,4 @@
-class ntp::config(
-  String $config_name,
-  String $config_ensure,
-  String $config_owner,
-  String $config_group,
-  String $config_mode,
-  Array[String] $servers,
-) { 
+class ntp::config { 
   file { 'ntp_config':
     ensure  => $config_ensure,
     path    => "/etc/${config_name}",
