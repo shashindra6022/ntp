@@ -4,7 +4,7 @@
   "author": "shashindra",
   "summary": "this is ntp module",
   "license": "Apache-2.0",
-  "source": "https://github.com/shashindra6022/ntp",
+  "source": "https://github.com/shashindra6022/ntp.git",
   "project_page": "https://github.com/shashindra6022/ntp",
   "issues_url": "https://github.com/shashindra6022/ntp/issues",
   "dependencies": [
