@@ -1,4 +1,4 @@
-class ntp::config { 
+class ntp::config inherits ::ntp { 
   file { 'ntp_config':
     ensure  => $config_ensure,
     path    => "/etc/${config_name}",
