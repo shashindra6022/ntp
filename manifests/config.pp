@@ -1,9 +1,10 @@
 class ntp::config(
-  String $config_name   = $::ntp::config_name,
-  String $config_ensure = $::ntp::config_ensure,
-  String $config_owner  = $::ntp::config_owner,
-  String $config_group  = $::ntp::config_group,
-  String $config_mode   = $::ntp::config_mode,
+  String $config_name    = $::ntp::config_name,
+  String $config_ensure  = $::ntp::config_ensure,
+  String $config_owner   = $::ntp::config_owner,
+  String $config_group   = $::ntp::config_group,
+  String $config_mode    = $::ntp::config_mode,
+  Array[String] $servers = $::ntp::servers,
 ){ 
   file { 'ntp_config':
     ensure  => $config_ensure,
